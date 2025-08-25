@@ -6,13 +6,14 @@ interface:
 
 endpoints:
   custom:
-    - name: 'Flowise Adapter'
+    - name: 'SwimGPT'
       baseURL: 'https://flowise-to-librechat-production.up.railway.app/v1'
       apiKey: '${ADAPTER_KEY}'
       directEndpoint: false
       models:
-        default: ['flowise/myflow']
+        default: ['SwimGPT/SwimGPT 1.0']
         fetch: false
+      dropParams: ['stream']
       titleConvo: true
-      titleModel: 'flowise/myflow'
-      modelDisplayLabel: 'Flowise'
+      titleModel: 'SwimGPT/SwimGPT 1.0'
+      modelDisplayLabel: 'SwimGPT'
