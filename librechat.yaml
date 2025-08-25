@@ -50,7 +50,7 @@ actions:
 endpoints:
   custom:
     - name: 'Flowise Adapter'
-      baseURL: 'https://flowise-to-librechat.up.railway.app/v1'
+      baseURL: 'https://flowise-to-librechat-production.up.railway.app'
       apiKey: '${ADAPTER_KEY}'          # will match what you set in Railway
       directEndpoint: false
       models:
