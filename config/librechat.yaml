@@ -11,9 +11,12 @@ endpoints:
       apiKey: '${ADAPTER_KEY}'
       directEndpoint: false
       models:
-        default: ['SwimGPT/SwimGPT 1.0']
+        default: ['SwimGPT/SwimGPT 1.0']   # your model name
         fetch: false
-      dropParams: ['stream']
+      dropParams: ['stream']               # strip any stream param
+      addParams:
+        stream: false                      # and force it false
       titleConvo: true
       titleModel: 'SwimGPT/SwimGPT 1.0'
       modelDisplayLabel: 'SwimGPT'
+      
