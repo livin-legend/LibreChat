@@ -1,0 +1,10 @@
+    - name: 'Flowise via LiteLLM'
+      baseURL: 'https://<your-litellm-domain>/v1'
+      apiKey: 'user_provided'          # or a service key you control
+      directEndpoint: false            # LibreChat will call /v1/chat/completions
+      models:
+        default: ['flowise/myflow']    # the virtual model name you expose from LiteLLM
+        fetch: false
+      titleConvo: true
+      titleModel: 'flowise/myflow'
+      modelDisplayLabel: 'Flowise'
