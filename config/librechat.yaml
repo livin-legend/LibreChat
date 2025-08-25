@@ -8,15 +8,15 @@ endpoints:
   custom:
     - name: "SwimGPT"
       baseURL: "https://flowise-to-librechat-production.up.railway.app/v1"
-      apiKey: "${ADAPTER_KEY}"          # or "user_provided" if you want users to paste their own
-      directEndpoint: false             # use /v1/chat/completions shape
+      apiKey: "${ADAPTER_KEY}"
+      directEndpoint: false
       models:
         default: ["SwimGPT/SwimGPT 1.0"]
         fetch: false
-      dropParams: ["stream"]            # strip stream if UI tries to send it
+      dropParams: ["stream"]
       addParams:
-        stream: false                   # force non-streaming
-        balance: false                  # tell LC not to call /balance on this endpoint
+        stream: false
+        balance: false
       titleConvo: true
       titleModel: "SwimGPT/SwimGPT 1.0"
       modelDisplayLabel: "SwimGPT"
